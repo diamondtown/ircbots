@@ -19,6 +19,7 @@ class Connect_ActionListener(ActionListener):
         self.fb      = {} # Store an instance of Facebook for each user who asks to connect
         self.session = {}
         self.newsfeed= {} # Store the newsfeed functions, None means newsfeed monitoring is Off
+        self.mutual_friends = [] # Llist of all the UIDs that are mutual friends. (1 or more FB users must be logged in)
         stored_session = self.controller.unshelve('facebook-sessions')
         if stored_session: 
             self.session = stored_session
@@ -35,6 +36,9 @@ class Connect_ActionListener(ActionListener):
             session = self.session[user]
             name = self.fb[user].users.getInfo(session['uid'], ['name'])[0]
             self.bot.say(channel, "%s: You are logged into Facebook as %s" % (user, str(name['name'])))
+
+    def update_mutual_friends(self):
+        pass
     
     # This should be called before every action.
     # Returns False : The user needs to visit the URL to log in.
