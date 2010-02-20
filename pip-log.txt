@@ -1,0 +1,114 @@
+Downloading/unpacking pyfacebook
+  Getting page http://pypi.python.org/simple/pyfacebook
+  Could not fetch URL http://pypi.python.org/simple/pyfacebook: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/pyfacebook when looking for download links for pyfacebook
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for pyfacebook:
+  * http://pypi.python.org/simple/pyfacebook/
+  Getting page http://pypi.python.org/simple/pyfacebook/
+  Could not fetch URL http://pypi.python.org/simple/pyfacebook/: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/pyfacebook/ when looking for download links for pyfacebook
+  Could not find any downloads that satisfy the requirement pyfacebook
+No distributions at all found for pyfacebook
+Exception information:
+Traceback (most recent call last):
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 482, in main
+    self.run(options, args)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 675, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2422, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 1485, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for pyfacebook
+------------------------------------------------------------
+/home/jkress/ircbots_env/bin/pip run on Sun Feb 14 20:10:37 2010
+Unpacking /home/rhigdon/sandbox/pyFacebook/pyfacebook
+Exception:
+Traceback (most recent call last):
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 482, in main
+    self.run(options, args)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 675, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2429, in install_files
+    self.unpack_url(url, location, self.is_download)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2504, in unpack_url
+    self.unpack_file(source, location, content_type, link)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2640, in unpack_file
+    or tarfile.is_tarfile(filename)
+  File "/usr/lib/python2.6/tarfile.py", line 2523, in is_tarfile
+    t = open(name)
+  File "/usr/lib/python2.6/tarfile.py", line 1647, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/usr/lib/python2.6/tarfile.py", line 1709, in gzopen
+    fileobj = bltn_open(name, mode + "b")
+IOError: [Errno 21] Is a directory: '/home/rhigdon/sandbox/pyFacebook/pyfacebook'
+------------------------------------------------------------
+/home/jkress/ircbots_env/bin/pip run on Sun Feb 14 20:10:46 2010
+Unpacking /home/rhigdon/sandbox/pyFacebook/pyfacebook
+Exception:
+Traceback (most recent call last):
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 482, in main
+    self.run(options, args)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 675, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2429, in install_files
+    self.unpack_url(url, location, self.is_download)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2504, in unpack_url
+    self.unpack_file(source, location, content_type, link)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2640, in unpack_file
+    or tarfile.is_tarfile(filename)
+  File "/usr/lib/python2.6/tarfile.py", line 2523, in is_tarfile
+    t = open(name)
+  File "/usr/lib/python2.6/tarfile.py", line 1647, in open
+    return func(name, "r", fileobj, **kwargs)
+  File "/usr/lib/python2.6/tarfile.py", line 1709, in gzopen
+    fileobj = bltn_open(name, mode + "b")
+IOError: [Errno 21] Is a directory: '/home/rhigdon/sandbox/pyFacebook/pyfacebook/'
+------------------------------------------------------------
+/home/jkress/ircbots_env/bin/pip run on Sun Feb 14 20:10:54 2010
+Unpacking /home/rhigdon/sandbox/pyFacebook/pyfacebook/setup.py
+  Cannot unpack file /home/rhigdon/sandbox/pyFacebook/pyfacebook/setup.py (downloaded from /tmp/pip-K49CMA-build, content-type: text/x-python); cannot detect archive format
+Cannot determine archive format of /tmp/pip-K49CMA-build
+Exception information:
+Traceback (most recent call last):
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 482, in main
+    self.run(options, args)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 675, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2429, in install_files
+    self.unpack_url(url, location, self.is_download)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2504, in unpack_url
+    self.unpack_file(source, location, content_type, link)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2652, in unpack_file
+    raise InstallationError('Cannot determine archive format of %s' % location)
+InstallationError: Cannot determine archive format of /tmp/pip-K49CMA-build
+------------------------------------------------------------
+/home/jkress/ircbots_env/bin/pip run on Sun Feb 14 20:11:04 2010
+Obtaining file:///home/rhigdon/sandbox/pyFacebook/pyfacebook/
+  Running setup.py egg_info for package from file:///home/rhigdon/sandbox/pyFacebook/pyfacebook/
+    running egg_info
+    creating pyfacebook.egg-info
+    error: could not create 'pyfacebook.egg-info': Permission denied
+    Complete output from command python setup.py egg_info:
+    running egg_info
+
+creating pyfacebook.egg-info
+
+error: could not create 'pyfacebook.egg-info': Permission denied
+
+----------------------------------------
+Command python setup.py egg_info failed with error code 1
+Exception information:
+Traceback (most recent call last):
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 482, in main
+    self.run(options, args)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 675, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 2414, in install_files
+    req_to_install.run_egg_info()
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 1827, in run_egg_info
+    command_desc='python setup.py egg_info')
+  File "/home/jkress/ircbots_env/lib/python2.6/site-packages/pip-0.6.1-py2.6.egg/pip.py", line 4354, in call_subprocess
+    % (command_desc, proc.returncode))
+InstallationError: Command python setup.py egg_info failed with error code 1

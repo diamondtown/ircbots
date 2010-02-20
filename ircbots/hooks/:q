@@ -1,0 +1,85 @@
+[1;31mType:		[0mFacebook
+[1;31mBase Class:	[0m<class 'facebook.Facebook'>
+[1;31mString Form:[0m	<facebook.Facebook object at 0x841780c>
+[1;31mNamespace:	[0mInteractive
+[1;31mFile:		[0m/usr/lib/python2.6/site-packages/facebook/__init__.py
+[1;31mDocstring:
+[0m    Provides access to the Facebook API.
+    
+    Instance Variables:
+    
+    added
+        True if the user has added this application.
+    
+    api_key
+        Your API key, as set in the constructor.
+    
+    app_name
+        Your application's name, i.e. the APP_NAME in http://apps.facebook.com/APP_NAME/ if
+        this is for an internal web application. Optional, but useful for automatic redirects
+        to canvas pages.
+    
+    auth_token
+        The auth token that Facebook gives you, either with facebook.auth.createToken,
+        or through a GET parameter.
+    
+    callback_path
+        The path of the callback set in the Facebook app settings. If your callback is set
+        to http://www.example.com/facebook/callback/, this should be '/facebook/callback/'.
+        Optional, but useful for automatic redirects back to the same page after login.
+    
+    desktop
+        True if this is a desktop app, False otherwise. Used for determining how to
+        authenticate.
+    
+    facebook_url
+        The url to use for Facebook requests.
+    
+    facebook_secure_url
+        The url to use for secure Facebook requests.
+    
+    in_canvas
+        True if the current request is for a canvas page.
+    
+    internal
+        True if this Facebook object is for an internal application (one that can be added on Facebook)
+    
+    page_id
+        Set to the page_id of the current page (if any)
+    
+    secret
+        Secret that is used after getSession for desktop apps.
+    
+    secret_key
+        Your application's secret key, as set in the constructor.
+    
+    session_key
+        The current session key. Set automatically by auth.getSession, but can be set
+        manually for doing infinite sessions.
+    
+    session_key_expires
+        The UNIX time of when this session key expires, or 0 if it never expires.
+    
+    uid
+        After a session is created, you can get the user's UID with this variable. Set
+        automatically by auth.getSession.
+    
+    ----------------------------------------------------------------------
+[1;31mConstructor Docstring:
+[0m    Initializes a new Facebook object which provides wrappers for the Facebook API.
+    
+    If this is a desktop application, the next couple of steps you might want to take are:
+    
+    facebook.auth.createToken() # create an auth token
+    facebook.login()            # show a browser window
+    wait_login()                # somehow wait for the user to log in
+    facebook.auth.getSession()  # get a session key
+    
+    For web apps, if you are passed an auth_token from Facebook, pass that in as a named parameter.
+    Then call:
+    
+    facebook.auth.getSession()
+[1;31mCall def:	[0m[1;37mfb[0m[1;33m([0m[1;37mself[0m[1;33m,[0m [1;37mmethod[0m[1;33m=[0m[1;37mNone[0m[1;33m,[0m [1;37margs[0m[1;33m=[0m[1;37mNone[0m[1;33m,[0m [1;37msecure[0m[1;33m=[0m[1;37mFalse[0m[1;33m)[0m[1;33m[0m[0m
+
+[1;31mCall docstring:
+[0m    Make a call to Facebook's REST server.
