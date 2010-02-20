@@ -15,7 +15,6 @@ class BillyJoel(Bot):
 
     def joined(self, channel):
         self.modules += [ Connect(bot=self) ]
-        self.describe(channel, "Looks around for cats")
 
     def privmsg(self, user, channel, msg):
         pass
