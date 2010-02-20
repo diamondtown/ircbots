@@ -6,6 +6,6 @@ setup(
         url = 'http://irc.diamondtown.org',
         author = "Billy Joel",
         author_email = "amckinley@facebook.com",
-        packages = [ 'ircbots' ],
+        packages = [ 'ircbots', 'ircbots.hooks' ],
         #scripts = [ 'scripts/newhotness', 'scripts/fpl' ]
 )
